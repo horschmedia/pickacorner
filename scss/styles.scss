@@ -1,3 +1,8 @@
+$blue: #2b80b9;
+$red: #e74b3c;
+$green: #1cbb9b;
+$yellow: #f2c311;
+
 * {
   margin: 0;
   padding: 0;
@@ -7,18 +12,54 @@
   padding: 0 15px;
 }
 
-#title {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  margin-bottom: 0;
+.current-score, .high-score {
+  font-size: 50px;
 }
 
-.corner {
-  height: 50vh;
+.top-container {
   position: relative;
+  top: 0;
+  left: 0;
+  height: 20vh;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  color: black;
+}
+
+.score-container {
+  width: 500px;
+  max-width: 100%;
+  margin-bottom: 0;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#corner-1 {
+  background: $blue;
+}
+
+#corner-2 {
+  background: $green;
+}
+
+#corner-3 {
+  background: $red;
+}
+
+#corner-4 {
+  background: $yellow;
+}
+
+.main-container {
+
+}
+.corner {
+  height: 40vh;
+  position: relative;
+  color: white;
 
   p {
     font-size: 3rem;

@@ -5,20 +5,53 @@
 
 .main-container {
   padding: 0 15px;
-} 
+}
 
-#title {
-  position: absolute;
+.current-score, .high-score {
+  font-size: 50px;
+}
+
+.top-container {
+  position: relative;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
+  left: 0;
+  height: 20vh;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  color: black;
+}
+
+.score-container {
+  width: 500px;
+  max-width: 100%;
   margin-bottom: 0;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#corner-1 {
+  background: #2b80b9;
+}
+
+#corner-2 {
+  background: #1cbb9b;
+}
+
+#corner-3 {
+  background: #e74b3c;
+}
+
+#corner-4 {
+  background: #f2c311;
 }
 
 .corner {
-  height: 50vh;
+  height: 40vh;
   position: relative;
+  color: white;
 }
 .corner p {
   font-size: 3rem;
