@@ -7,12 +7,28 @@
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
     <title>Pick A Corner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
   <body>
     <div class="top-container">
-      <div class="score-container">
+      <div class="row">
+        <div class="col-3 col-md-3">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="col-6 col-md-6">
+          <h1 style="text-align: center">Pick A Corner</h1>
+        </div>
+        <div class="col-3 col-md-3" style="text-align: right;">
+          <i class="fas fa-user-alt"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="score-container">
+      <div class="scores">
+        <i class="fas fa-trophy"></i>
         <div class="row">
           <div class="col-6">
             <div class="current-score">

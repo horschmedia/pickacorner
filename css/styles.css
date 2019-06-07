@@ -8,21 +8,41 @@
 }
 
 .current-score, .high-score {
+  font-weight: bold;
   font-size: 50px;
+}
+
+.fa-trophy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: gold;
 }
 
 .top-container {
   position: relative;
   top: 0;
   left: 0;
+  height: 10vh;
+  overflow: hidden;
+  color: black;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.score-container {
+  position: relative;
+  top: 0;
+  left: 0;
   height: 20vh;
   overflow: hidden;
-  padding: 15px;
   text-align: center;
   color: black;
 }
 
-.score-container {
+.scores {
   width: 500px;
   max-width: 100%;
   margin-bottom: 0;
@@ -49,7 +69,7 @@
 }
 
 .corner {
-  height: 40vh;
+  height: 35vh;
   position: relative;
   color: white;
 }
@@ -59,6 +79,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .top-container {
+    padding: 10px;
+  }
+  .top-container .col-md-6 {
+    padding: 0;
+  }
+  .top-container h1 {
+    font-size: 25px;
+    margin-top: 7px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
