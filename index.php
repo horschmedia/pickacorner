@@ -51,6 +51,8 @@
     </div>
 
     <div class="main-container">
+      <div id="hand-spinner"></div>
+      
       <div class="row">
         <div id="corner-1" class="col-6 corner">
           <p>1</p>

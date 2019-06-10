@@ -9,6 +9,7 @@ $yellow: #f2c311;
 }
 
 .main-container {
+  position: relative;
   padding: 0 15px;
 }
 
@@ -55,6 +56,35 @@ $yellow: #f2c311;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
+}
+
+#hand-spinner {
+  height: 40vh;
+  position: absolute;
+  z-index: 3;
+  top: calc(50% - 20vh);
+  left: calc(50% - 5px);
+  width: 10px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: black;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid black;
+  }
 }
 
 #corner-1 {
