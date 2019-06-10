@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col-6">
             <div class="current-score">
-              100
+              0
             </div>
             <div class="current-score-label">
               Your Score
@@ -40,7 +40,7 @@
           </div>
           <div class="col-6">
             <div class="high-score">
-              1900
+              0
             </div>
             <div class="high-score-label">
               High Score
@@ -51,8 +51,9 @@
     </div>
 
     <div class="main-container">
+      <div id="start-button">Start</div>
       <div id="hand-spinner"></div>
-      
+
       <div class="row">
         <div id="corner-1" class="col-6 corner">
           <p>1</p>
