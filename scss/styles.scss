@@ -38,7 +38,7 @@ $yellow: #f2c311;
   padding: 20px;
 }
 
-.score-container {
+.about-container {
   position: relative;
   top: 0;
   left: 0;
@@ -48,14 +48,20 @@ $yellow: #f2c311;
   color: black;
 }
 
-.scores {
-  width: 500px;
-  max-width: 100%;
-  margin-bottom: 0;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
+.instructions-container {
+  width: 400px;
+  max-width: calc(100% - 40px);
+  display: block;
+  margin: 0 auto;
+
+  p {
+    text-align: left;
+  }
+}
+
+#picks-left {
+  font-size: 50px;
+  font-weight: bold;
 }
 
 #hand-spinner {
@@ -107,9 +113,8 @@ $yellow: #f2c311;
   background: rgba(0,0,0,.6);
   color: white;
 
-  &:after {
-    content: "";
-
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -155,13 +160,58 @@ $yellow: #f2c311;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,.15);
+    background: rgba(0,0,0,.25);
     height: 100%;
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  .desktop-instructions {
+    display: none;
+  }
+  .mobile-instructions {
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    background: rgba(0,0,0,.85);
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .close-instructions {
+      padding: 5px;
+      width: 200px;
+      background: green;
+      text-align: center;
+      display: block;
+      margin: 30px auto;
+      border-radius: 20px;
+      font-size: 1.4rem;
+    }
+  }
+  .about-container {
+    height: 30vh;
+  }
+  .current-score, .high-score, #picks-left {
+    line-height: 50px;
+    font-size: 50px;
+  }
+  .corner {
+    height: 30vh;
+  }
+  #start-button {
+    height: 60vh;
+  }
   .top-container {
     padding: 10px;
 
@@ -173,5 +223,13 @@ $yellow: #f2c311;
       font-size: 25px;
       margin-top: 7px;
     }
+  }
+}
+
+// very small phones
+@media (max-width: 340px) {
+  .current-score, .high-score, #picks-left {
+    font-size: 40px;
+    line-height: 40px;
   }
 }

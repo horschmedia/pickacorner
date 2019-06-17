@@ -12,61 +12,104 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
   <body>
+
+    <div class="mobile-instructions">
+      <div class="instructions-container">
+        <h2>Instructions</h2>
+        <p>Pick the corners you would like to win. If your corner is picked you move onto the next level. The number of picks will decrease as you get to higher levels.</p>
+        <div class="close-instructions">
+          Got it
+        </div>
+      </div>
+    </div>
+
     <div class="top-container">
       <div class="row">
+
         <div class="col-3 col-md-3">
           <i class="fas fa-bars"></i>
         </div>
+
         <div class="col-6 col-md-6">
           <h1 style="text-align: center">Pick A Corner</h1>
         </div>
+
         <div class="col-3 col-md-3" style="text-align: right;">
           <i class="fas fa-user-alt"></i>
         </div>
+
       </div>
     </div>
 
-    <div class="score-container">
-      <div class="scores">
-        <i class="fas fa-trophy"></i>
-        <div class="row">
-          <div class="col-6">
-            <div class="current-score">
-              0
-            </div>
-            <div class="current-score-label">
-              Your Score
-            </div>
+    <div class="about-container">
+      <div style="height: 100%" class="row align-items-center">
+
+        <div class="desktop-instructions col-12 col-md-4">
+          <div class="instructions-container">
+            <h2>Instructions</h2>
+            <p>Pick the corners you would like to win. If your corner is picked you move onto the next level. The number of picks will decrease as you get to higher levels.</p>
           </div>
-          <div class="col-6">
-            <div class="high-score">
-              0
-            </div>
-            <div class="high-score-label">
-              High Score
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="picks-container">
+            <div id="picks-left">3</div>
+            <div>Picks Left</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="scores">
+            <i class="fas fa-trophy"></i>
+            <div class="row">
+              <div class="col-6">
+                <div class="current-score">
+                  0
+                </div>
+                <div class="current-score-label">
+                  Current Score
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="high-score">
+                  0
+                </div>
+                <div class="high-score-label">
+                  High Score
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
+
+
     <div class="main-container">
+
       <div id="start-button">Start</div>
       <div id="hand-spinner"></div>
 
       <div class="row">
+
         <div id="corner-1" class="col-6 corner">
           <p>1</p>
         </div>
+
         <div id="corner-2" class="col-6 corner">
           <p>2</p>
         </div>
+
         <div id="corner-3" class="col-6 corner">
           <p>3</p>
         </div>
+
         <div id="corner-4" class="col-6 corner">
           <p>4</p>
         </div>
+
       </div>
     </div>
 

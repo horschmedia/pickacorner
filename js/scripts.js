@@ -42,13 +42,25 @@ $('.corner').on("click", function() {
   else {
     $('#start-button').show();
   }
+  $('#picks-left').html(picksLeft);
 });
 
 function resetPicks() {
   $('.corner').removeClass('picked');
   isSpinning = false;
   userPicks = [];
-  picksLeft = 3;
+
+  if(score > (9 * scoreIncriment)) {
+    picksLeft = 1;
+  }
+  else if(score > (4 * scoreIncriment)) {
+    picksLeft = 2;
+  }
+  else {
+    picksLeft = 3;
+  }
+
+  $('#picks-left').html(picksLeft);
   $('#start-button').hide();
 }
 
@@ -132,3 +144,8 @@ function getRandomNumber() {
   }
   return number;
 }
+
+// close instructions
+$('.mobile-instructions').on("click", function() {
+  $('.mobile-instructions').hide();
+})
