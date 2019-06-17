@@ -35,7 +35,7 @@ $yellow: #f2c311;
   overflow: hidden;
   color: black;
   font-size: 30px;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .about-container {
@@ -46,6 +46,10 @@ $yellow: #f2c311;
   overflow: hidden;
   text-align: center;
   color: black;
+}
+
+.mobile-instructions {
+  display: none;
 }
 
 .instructions-container {

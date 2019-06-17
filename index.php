@@ -44,21 +44,21 @@
     <div class="about-container">
       <div style="height: 100%" class="row align-items-center">
 
-        <div class="desktop-instructions col-12 col-md-4">
+        <div class="d-none d-lg-block col-lg-4">
           <div class="instructions-container">
             <h2>Instructions</h2>
             <p>Pick the corners you would like to win. If your corner is picked you move onto the next level. The number of picks will decrease as you get to higher levels.</p>
           </div>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="picks-container">
             <div id="picks-left">3</div>
             <div>Picks Left</div>
           </div>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="scores">
             <i class="fas fa-trophy"></i>
             <div class="row">
